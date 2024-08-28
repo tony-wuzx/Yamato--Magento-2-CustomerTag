@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <filters name="listing_filters">
+            <filterSelect name="customer_tags" provider="${ $.parentName }"
+                          component="Magento_Ui/js/form/element/ui-select"
+                          template="ui/grid/filters/elements/ui-select">
+                <settings>
+                    <options class="Yamato\CustomerTag\Ui\Component\Listing\Column\Tag\Options"/>
+                    <caption translate="true">Select</caption>
+                    <label translate="true">Customer Tags</label>
+                    <dataScope>customer_tags</dataScope>
+                </settings>
+            </filterSelect>
+        </filters>
+    </listingToolbar>
+    <columns name="sales_order_columns">
+        <column name="customer_tags" class="Yamato\CustomerTag\Ui\Component\Listing\Column\CustomerTags"
+                component="Magento_Ui/js/grid/columns/select">
+            <settings>
+                <filter>multiselect</filter>
+                <options class="Yamato\CustomerTag\Ui\Component\Listing\Column\Tag\Options"/>
+                <dataType>select</dataType>
+                <label translate="true">Customer Tags</label>
+            </settings>
+        </column>
+    </columns>
+</listing>

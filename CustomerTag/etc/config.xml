@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <yamato_customer_tag>
+            <configuration>
+                <is_enabled>0</is_enabled>
+                <tags><![CDATA[{"_1627996763891_891":{"value":"1","label":"\u66F4\u65B0"},"_1627996765048_48":{"value":"2","label":"\u4EE3\u8D2D"}}]]></tags>
+            </configuration>
+        </yamato_customer_tag>
+    </default>
+</config>

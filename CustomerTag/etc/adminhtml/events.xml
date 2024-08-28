@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="admin_system_config_changed_section_yamato_customer_tag">
+        <observer name="yamato_customer_tag_update_after"
+                  instance="Yamato\CustomerTag\Observer\CustomerTagSaveAfter" />
+    </event>
+</config>
